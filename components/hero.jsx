@@ -1,9 +1,10 @@
-"use client";
+"use client";//when we try to use the hook and not do not to run the page on server side 
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import AiBot from "../components/Ai-bot";
 
 const HeroSection = () => {
   const imageRef = useRef(null);
@@ -46,12 +47,14 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-          <Link href="https://www.youtube.com/roadsidecoder">
             <Button size="lg" variant="outline" className="px-8">
               Watch Demo
             </Button>
-          </Link>
         </div>
+
+       <div className="">
+        <AiBot/>
+       </div>
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
             <Image
@@ -64,6 +67,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
+        
       </div>
     </section>
   );
