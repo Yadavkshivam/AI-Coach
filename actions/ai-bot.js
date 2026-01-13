@@ -12,6 +12,7 @@ export async function askBot(message) {
 
   try {
     const prompt = `
+
     You are a friendly AI assistant inside a this app.
     Answer clearly in points and in simple language .
     Give the response in bullet point and ask for elaborate 
